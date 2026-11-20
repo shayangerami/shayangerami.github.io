@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - shayangerami
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - shayangerami/HeatMapLBPNET
+  - shayangerami/SunSift
+  - shayangerami/EvidenceEvalRAG
+  - shayangerami/DomainAdaptation
+  - shayangerami/Multi-Branch-GTSRB

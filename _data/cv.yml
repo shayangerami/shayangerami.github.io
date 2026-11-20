@@ -1,189 +1,303 @@
+# This file feeds both the CV page on the website (al_folio_cv) and the RenderCV PDF built by
+# .github/workflows/render-cv.yml. RenderCV only accepts these top-level fields: name, headline,
+# location, email, phone, website, photo, social_networks, custom_connections, sections.
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  name: Shayan Gerami
+  headline: Undergraduate Researcher in Computer Vision and Machine Learning
+  email: sgera@uic.edu
+  location: Chicago, IL
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
     - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: shane-gerami
+    - network: GitHub
+      username: shayangerami
+    - network: Google Scholar
+      username: "-kxpL88AAAAJ"
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: University of Illinois Chicago (UIC)
+        location: Chicago, IL
+        url: https://www.uic.edu/
+        area: Information and Decision Sciences, Minor in Computer Science
+        degree: B.S.
+        date: 2026-12
         highlights:
-          - Description 1.
-          - Description 2.
-
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+          - "Expected graduation: December 2026"
+          - "Dean's List, Honors College, GPA: 3.67/4.00"
+          - "Coursework: Data Structures & Algorithms, Machine Learning and Data Mining, Programming (Python, C, C++), Linear Algebra,
+            Discrete Mathematics, Multivariable Calculus, Advanced Statistics & Probability, Linear Optimization"
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: RUIC Lab, University of Illinois Chicago
+        position: Research Assistant, Machine Learning and Embedded AI
+        location: Chicago, IL
+        url: https://ruic.lab.uic.edu/
+        start_date: 2025-04
+        end_date: present
         highlights:
-          - Relativity
-          - Description 2.
+          - Lead computer vision and machine learning research from problem formulation and method design through implementation,
+            experimental evaluation, and manuscript preparation.
+          - Develop efficient deep learning methods for visual recognition and video understanding, exploring adaptive computation,
+            temporal reuse, sparse inference, and low-precision models.
+          - Investigate diffusion and flow-based generative models, with an emphasis on adapting inference to changing conditions
+            and incorporating information across modalities.
+          - Design reproducible experiments, reproduce competing methods, and conduct ablation studies to characterize model accuracy,
+            computational efficiency, runtime, and robustness to adversarial perturbations and hardware faults.
+          - Explore hardware–algorithm co-design for intelligent sensing and edge AI, including near-sensor processing,
+            memory-efficient inference, and microcontroller deployment under intermittent power.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Epsilon Systems Solutions, Inc. (C5I)
+        position: Edge Computing Intern
+        location: Dayton, OH
+        start_date: 2026-05
+        end_date: 2026-08
         highlights:
-          - Description 1.
-          - Description 2.
+          - Built a multithreaded Python acquisition pipeline on Jetson Orin Nano integrating a FLIR polarimetric camera, 100–400 Hz IMU,
+            and 1 Hz GNSS receiver. Used Teensy-based triggering and camera exposure signals to align frames with timestamped sensor measurements.
+          - Computed per-pixel Stokes parameters from a 2 × 2 division-of-focal-plane polarization mosaic and derived angle and degree
+            of linear polarization at 1224 × 1024 resolution.
+          - Implemented polarization reference-frame correction using camera attitude, viewing geometry, and solar direction.
+            Accelerated processing with CuPy and custom CUDA kernels from approximately 1 to 7 FPS, verifying numerical agreement
+            with the CPU pipeline.
+          - Fine-tuned a PyTorch U-Net with an ImageNet-pretrained MobileNetV2 encoder for binary water segmentation.
+            Exported the model to ONNX and deployed TensorRT-optimized inference on Jetson Orin Nano.
+          - Built a detection and multi-object tracking pipeline combining CA-CFAR, OpenCV morphology, connected components,
+            and watershed segmentation with Stone Soup Kalman filtering and data association.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: UIC Honors College
+        position: IT Assistant Intern
+        location: Chicago, IL
+        start_date: 2025-05
+        end_date: 2025-08
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - Maintained RHEL/Debian servers and production services, troubleshooting SSH/SFTP access, DNS, firewall rules, and system issues.
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - company: UIC Honors College
+        position: Front Desk Reception Assistant
+        location: Chicago, IL
+        start_date: 2024-01
+        end_date: 2025-08
+        highlights:
+          - Coordinated front-desk operations, scheduling, and visitor support, assisting students, faculty, and staff with inquiries
+            and daily administrative needs.
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: "SENTRY: Spiking Event Reasoning for Selective Deep Inference in Event-Driven Edge Vision"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - "**Shayan Gerami**"
+          - Sepehr Tabrizchi
+          - Shaahin Angizi
+          - Ramtin Zand
+          - Arman Roohi
+        journal: ACM Great Lakes Symposium on VLSI (GLSVLSI)
+        publisher: ACM Great Lakes Symposium on VLSI (GLSVLSI)
+        date: 2026-06
+        doi: 10.1145/3787109.3816393
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+      - title: "ROAST: Reverse-training Offset Attack on Spatial Sampling Topologies"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+          - "**Shayan Gerami**"
+          - Sepehr Tabrizchi
+          - Shaahin Angizi
+          - Arman Roohi
+        journal: ACM/IEEE Design Automation Conference (DAC), Late Breaking Results
+        publisher: ACM/IEEE Design Automation Conference (DAC), Late Breaking Results
+        date: 2026-07
+        doi: 10.1145/3770743.3807710
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
+      - title: "Pixel-Wise Intelligence: Heatmap-Guided Adaptive LBP for In-Sensor Vision Processing"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+          - "**Shayan Gerami**"
+          - Sepehr Tabrizchi
+          - Hong Ding
+          - Shaahin Angizi
+          - Arman Roohi
+        journal: IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS)
+        publisher: IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS)
+        date: 2026
+        doi: 10.1109/JETCAS.2026.3713822
 
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - title: "SunSift: Solar-Powered Intelligent Sensing Through Informative Sample Selection"
+        authors:
+          - "**Shayan Gerami**"
+          - Sepehr Tabrizchi
+          - Omer Kurkutlu
+          - Rebati Raman Gaire
+          - Arman Roohi
+        journal: IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS)
+        publisher: IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS)
+        date: 2025-09
+        doi: 10.1109/ACSOS-C66519.2025.00057
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
+      - title: "ARISE: Adaptive Resource-Aware Intelligent SEnsing Enabling Intermittent Learning"
+        authors:
+          - Sepehr Tabrizchi
+          - Rebati Raman Gaire
+          - Neeraj Solanki
+          - "**Shayan Gerami**"
+          - Ali Shafiee Sarvestani
+          - David Z. Pan
+          - Arman Roohi
+        journal: IEEE Transactions on Circuits and Systems for Artificial Intelligence (TCASAI)
+        publisher: IEEE Transactions on Circuits and Systems for Artificial Intelligence (TCASAI)
+        date: 2026-06
+        doi: 10.1109/TCASAI.2026.3653699
 
-      - name: English
-        summary: "Fluent"
+      - title: "BISen: A Robust Framework for Efficient CNN Inference on Battery-Free Intelligent Sensory Nodes"
+        authors:
+          - Sepehr Tabrizchi
+          - "**Shayan Gerami**"
+          - Justin Feng
+          - Nader Sehatbakhsh
+          - David Z. Pan
+          - Arman Roohi
+        journal: IEEE Transactions on Computers (TC)
+        publisher: IEEE Transactions on Computers (TC)
+        date: 2026-08
+        doi: 10.1109/TC.2026.3669818
 
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+    Manuscripts Under Review:
+      - bullet: "*ReVisiT: Revisiting Only What Changed for Efficient Video Vision Transformers*"
+      - bullet: "*SCENE: A Sparse Capacitive Event-Driven Near-Sensor Engine for Frame-Compatible Object Detection*"
+      - bullet: "*What a Late Condition Misses: Correcting Mid-Trajectory Condition Changes*"
 
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+    Conference Presentations:
+      - bullet: "**IEEE ACSOS 2025**, Tokyo, Japan. Poster & Demo Track (first author): *SunSift: Solar-Powered Intelligent Sensing
+          Through Informative Sample Selection*"
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: "ReVisiT: Efficient Video Vision Transformers"
+        summary: Manuscript under review
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - Developed training-free selective inference using luminance-based change detection, one-hop spatial expansion,
+            and temporal activation caching to recompute selected tokens across video frames.
+          - Evaluated ViTDet-B on ImageNet VID, achieving 82.27% mAP@0.5 versus 82.37% for dense inference while reducing
+            estimated backbone operations by 69.3%.
+          - Evaluated ViTPose-S/16 on Sub-JHMDB, achieving 95.77% PCK@0.2 versus 95.75% for dense inference with 64.6% fewer
+            estimated backbone operations.
+          - Integrated selective DINO ViT-S/16 inference into video object segmentation on DAVIS 2017, achieving 60.64% J&F
+            versus 61.8% for dense inference with 33.8% fewer estimated backbone operations.
+          - Adapted Eventful Transformers and STC-Cacher for pose and segmentation and MaskVD for segmentation. Conducted ablations
+            on spatial expansion, periodic refresh, and attention update strategies to characterize accuracy–computation tradeoffs.
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: "MGC: Missed-Guidance Correction for Diffusion and Flow Models"
+        summary: Manuscript under review
+        highlights:
+          - Developed a training-free method for adapting diffusion and flow samplers to conditions arriving mid-generation.
+            Estimated missed guidance from two to five historical probes and applied a single correction at the switch.
+          - Investigated how historical guidance contributes target-specific information beyond the condition difference at the switch,
+            and showed that successful semantic correction can occur without recovering the restart state.
+          - Increased concept insertion success from 19.6% to 49.7% on Stable Diffusion 2.1 and from 41.4% to 71.0% on SD3.5 using
+            two probes, averaged across switch times on restart-valid prompt pairs. Required 8% more model evaluations than direct
+            switching and outperformed equal-compute rewinding by 26.1 percentage points on SD2.1.
+          - Extended MGC to audio-visual speech enhancement with delayed lip-video conditioning, recovering 86.1% of the full audio-visual
+            SI-SDR gain versus 49.4% for direct switching on the held-out speaker, and 72.9% versus 28.7% on unseen speakers and noise types.
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: "SCENE: Sparse Video Reconstruction for Efficient Object Detection"
+        summary: Manuscript under review
+        highlights:
+          - Built the system-level evaluation for a sparse event-driven in/near-sensor engine that reconstructs conventional video
+            frames from selected changes for frame-based object detection.
+          - Evaluated reconstruction on 30,402 ImageNet-VidVRD frames across 107 videos. Compared against full-frame processing,
+            running-average background modeling, and ViBe.
+          - Swept comparison thresholds, resolutions, and periodic full-frame refresh schedules, measuring image fidelity,
+            modeled data transfer, and detector accuracy.
+          - Integrated YOLOV++ inference and fine-tuning on reconstructed frames. Identified one configuration reaching 83% mAP@0.5
+            with 56% lower modeled transfer and another reaching 82% mAP@0.5 at 0.80 versus 2.76 MB/frame modeled transfer.
+
+      - name: Heatmap-Guided LBPNet for Efficient Visual Recognition
+        date: 2025-12
+        url: https://github.com/shayangerami/HeatMapLBPNET
+        summary: Journal publication (IEEE JETCAS)
+        highlights:
+          - Introduced heatmap-guided spatial masking and adaptive sampling to optimize MAC-free LBPNet architecture,
+            reducing wasted processing on background regions.
+          - Reduced operations by more than 10× and model size by more than 100× compared to CNN baselines on structured vision tasks.
+          - Achieved approximately 99% on digit and character recognition and 95% on facial-expression recognition.
+
+      - name: "SunSift: Battery-Free Computer Vision for Edge Devices"
+        date: 2025-07
+        url: https://github.com/shayangerami/SunSift
+        summary: Conference publication (IEEE ACSOS 2025)
+        highlights:
+          - Built a battery-free vision pipeline that selects informative samples and deploys lightweight CNN inference on
+            microcontrollers using TensorFlow Lite Micro.
+          - Converted the PyTorch-trained sampler through ONNX and TensorFlow Lite for microcontroller deployment.
+          - Designed selective MRAM checkpointing and implemented a six-state voltage-aware controller for sensing, computing,
+            loading, storing, sleeping, and transmitting.
+
+      - name: "ROAST: Reverse-training Offset Attack on Spatial Sampling Topologies"
+        date: 2026
+        summary: ACM/IEEE DAC, Late Breaking Results
+        highlights:
+          - Developed a white-box attack on LBPNet that maximizes classification loss by updating learned spatial sampling offsets,
+            then uses truncated Hamming distance on FP32 representations to construct a bit-flip schedule.
+          - Evaluated independent and cumulative attacks on MNIST and SVHN, reducing accuracy by 69.52 and 64.42 percentage points
+            while flipping only 4.39% and 4.52% of offset bits, respectively. Achieved greater accuracy degradation per flipped bit than BFA.
+
+      - name: "SENTRY: Selective Inference for Event-Driven Edge Vision"
+        date: 2026
+        summary: ACM GLSVLSI
+        highlights:
+          - Developed hierarchical event filtering using regional spike-rate gating and spatial confirmation to trigger selective
+            vision inference. On an evaluated surveillance sequence, improved transmission precision from 41% to 67% and reduced
+            false-positive transmissions from 65 to 28 versus a global spike-rate baseline.
+
+      - name: "CloudAlign: 3D Point-Cloud Registration"
+        summary: Independent project
+        highlights:
+          - Built an Open3D pipeline combining FPFH descriptors, RANSAC alignment, and ICP refinement, improving pose-recovery
+            success over ICP alone from 69% to 99% across 100 test pairs and from 15% to 97% under large rotations,
+            with 0.151 s median CPU runtime.
+
+      - name: Evidence-Aware RAG Agent and Evaluation Framework
+        url: https://github.com/shayangerami/EvidenceEvalRAG
+        summary: Independent project
+        highlights:
+          - Built a LangGraph agent with local Qwen models, semantic retrieval, evidence verification, conditional retries,
+            and abstention. Evaluated 300 SciFact claims, reducing the automated unsupported-answer metric from 37.7% to 7.3%
+            while tracking answer coverage and latency.
+
+      - name: Deep Domain Adaptation for CT-to-X-Ray Classification
+        date: 2025-12
+        url: https://github.com/shayangerami/DomainAdaptation
+        summary: Independent project
+        highlights:
+          - Compared fine-tuning, DANN, CORAL, and MMD using a RadImageNet-pretrained ResNet-50, improving target X-ray test accuracy
+            from 60.87% to 97.83% in the best configuration.
+
+      - name: Multi-Branch Feature Fusion for Traffic Sign Recognition
+        date: 2025-12
+        url: https://github.com/shayangerami/Multi-Branch-GTSRB
+        summary: Independent project
+        highlights:
+          - Combined frozen edge, shape, and color backbones through feature-level fusion, achieving 86% GTSRB accuracy with
+            1.2M trainable parameters and 16.8M frozen parameters.
+
+    Skills:
+      - name: Programming
+        keywords: Python, C++, C, SQL
+      - name: Deep Learning
+        keywords: PyTorch, TensorFlow, Hugging Face Transformers, scikit-learn
+      - name: Computer Vision
+        keywords: OpenCV, Open3D, Stone Soup
+      - name: Generative AI and Retrieval
+        keywords: LangGraph, Qwen, Hugging Face Diffusers
+      - name: GPU Computing
+        keywords: CUDA, CuPy
+      - name: Edge Deployment
+        keywords: ONNX, TensorRT, TensorFlow Lite Micro, NVIDIA Jetson Orin Nano
+      - name: Scientific Computing
+        keywords: NumPy, SciPy, pandas, Matplotlib
+      - name: Development Tools
+        keywords: Linux, Docker, Git, GitHub, Bash, pytest
+
+    Leadership and Service:
+      - label: Alumni Relations Director, Business Analytics Organization, UIC (April – December 2024)
+        details: Organized alumni networking events, workshops, and panels.
+      - label: IT Intern, Finance and Investment Group, UIC (January – May 2024)
+        details: Maintained organizational websites and supported career events.
+      - label: Vice President, Iranian Student Organization, UIC (January – December 2024)
+        details: Coordinated cultural events, volunteers, external speakers, and public communications.

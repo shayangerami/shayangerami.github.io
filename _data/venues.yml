@@ -1,9 +1,19 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+# Optional styling for the venue badges (the `abbr` field in _bibliography/papers.bib).
+# Each key is an abbr value; `url` makes the badge a link and `color` sets its background.
+"GLSVLSI":
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"DAC":
+  color: "#00369f"
 
-"Vision":
+"ACSOS":
+  color: "#00369f"
+
+"JETCAS":
+  color: "#009f36"
+
+"TCASAI":
+  color: "#009f36"
+
+"TC":
   color: "#009f36"

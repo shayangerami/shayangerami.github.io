@@ -1,115 +1,107 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+Notes for editing this file (plain text between entries is ignored):
+- The authorship field (first or co) decides which list a paper appears in
+  on the publications page. Papers with selected set to true are also shown
+  on the home page.
+- To add a thumbnail image for a paper, put the image in
+  assets/img/publication_preview/ and add a preview field with the file name
+  (for example sentry.png) to that paper's entry.
+- Other optional link fields: pdf, code, poster, slides, video, website, arxiv.
 
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
-}
-
-@book{einstein1956investigations,
+@inproceedings{gerami2026sentry,
+  abbr        = {GLSVLSI},
   bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+  selected    = {true},
+  authorship  = {first},
+  title       = {SENTRY: Spiking Event Reasoning for Selective Deep Inference in Event-Driven Edge Vision},
+  author      = {Gerami, Shayan and Tabrizchi, Sepehr and Angizi, Shaahin and Zand, Ramtin and Roohi, Arman},
+  booktitle   = {Proceedings of the Great Lakes Symposium on VLSI 2026},
+  pages       = {129--134},
+  year        = {2026},
+  month       = {Jun},
+  publisher   = {ACM},
+  location    = {Canandaigua, NY, USA},
+  doi         = {10.1145/3787109.3816393}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
+@inproceedings{gerami2026roast,
+  abbr        = {DAC},
   bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+  selected    = {true},
+  authorship  = {first},
+  title       = {Late Breaking Results: ROAST: Reverse-training Offset Attack on Spatial Sampling Topologies},
+  author      = {Gerami, Shayan and Tabrizchi, Sepehr and Angizi, Shaahin and Roohi, Arman},
+  booktitle   = {Proceedings of the 63rd ACM/IEEE Design Automation Conference},
+  pages       = {1--2},
+  year        = {2026},
+  month       = {Jul},
+  publisher   = {ACM},
+  location    = {Long Beach, CA, USA},
+  doi         = {10.1145/3770743.3807710}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
+@article{gerami2026pixelwise,
+  abbr        = {JETCAS},
   bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
+  selected    = {true},
+  authorship  = {first},
+  title       = {Pixel-Wise Intelligence: Heatmap-Guided Adaptive LBP for In-Sensor Vision Processing},
+  author      = {Gerami, Shayan and Tabrizchi, Sepehr and Ding, Hong and Angizi, Shaahin and Roohi, Arman},
+  journal     = {IEEE Journal on Emerging and Selected Topics in Circuits and Systems},
+  year        = {2026},
+  publisher   = {IEEE},
+  doi         = {10.1109/JETCAS.2026.3713822},
+  code        = {https://github.com/shayangerami/HeatMapLBPNET}
 }
 
-@book{przibram1967letters,
+@inproceedings{gerami2025sunsift,
+  abbr        = {ACSOS},
   bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+  selected    = {true},
+  authorship  = {first},
+  title       = {SunSift: Solar-Powered Intelligent Sensing Through Informative Sample Selection},
+  author      = {Gerami, Shayan and Tabrizchi, Sepehr and Kurkutlu, Omer and Gaire, Rebati Raman and Roohi, Arman},
+  booktitle   = {2025 IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion (ACSOS-C)},
+  pages       = {197--198},
+  year        = {2025},
+  month       = {Sep},
+  publisher   = {IEEE},
+  location    = {Tokyo, Japan},
+  note        = {Poster and Demo Track},
+  doi         = {10.1109/ACSOS-C66519.2025.00057},
+  code        = {https://github.com/shayangerami/SunSift}
+}
+
+@article{tabrizchi2026arise,
+  abbr        = {TCASAI},
+  bibtex_show = {true},
+  authorship  = {co},
+  title       = {ARISE: Adaptive Resource-Aware Intelligent SEnsing Enabling Intermittent Learning},
+  author      = {Tabrizchi, Sepehr and Gaire, Rebati Raman and Solanki, Neeraj and Gerami, Shayan and Shafiee Sarvestani, Ali and Pan, David Z. and Roohi, Arman},
+  journal     = {IEEE Transactions on Circuits and Systems for Artificial Intelligence},
+  volume      = {3},
+  number      = {3},
+  pages       = {162--175},
+  year        = {2026},
+  month       = {Jun},
+  publisher   = {IEEE},
+  doi         = {10.1109/TCASAI.2026.3653699}
+}
+
+@article{tabrizchi2026bisen,
+  abbr        = {TC},
+  bibtex_show = {true},
+  authorship  = {co},
+  title       = {BISen: A Robust Framework for Efficient CNN Inference on Battery-Free Intelligent Sensory Nodes},
+  author      = {Tabrizchi, Sepehr and Gerami, Shayan and Feng, Justin and Sehatbakhsh, Nader and Pan, David Z. and Roohi, Arman},
+  journal     = {IEEE Transactions on Computers},
+  volume      = {75},
+  number      = {8},
+  pages       = {2730--2744},
+  year        = {2026},
+  month       = {Aug},
+  publisher   = {IEEE},
+  doi         = {10.1109/TC.2026.3669818}
 }
