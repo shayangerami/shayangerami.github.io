@@ -25,9 +25,9 @@ latest_posts:
   enabled: false
 ---
 
-I am an undergraduate student at the University of Illinois Chicago (UIC) and a research assistant in the [RUIC Lab](https://ruic.lab.uic.edu/). I expect to graduate in December 2026. I study how to make computer vision models more efficient and robust, from selective inference for video transformers to intelligent sensing on embedded devices. I also work on diffusion and flow models that adapt to new information during generation.
+I am an undergraduate researcher at the University of Illinois Chicago (UIC), working with the [RUIC Lab](https://ruic.lab.uic.edu/), and expect to graduate in December 2026. My research broadly focuses on **artificial intelligence and machine learning**, spanning deep learning, computer vision, generative AI, and intelligent systems.
 
-My work spans model design, experimental evaluation, and deployment. I have first-authored papers at IEEE and ACM venues.
+I am particularly interested in developing **efficient, adaptive, and reliable learning algorithms and architectures**, with an emphasis on model design, optimization, robustness, and experimental evaluation. My work has resulted in multiple first-author publications at IEEE and ACM venues.
 
 **Research interests**
 
