@@ -25,11 +25,9 @@ latest_posts:
   enabled: false
 ---
 
-I am an undergraduate student at the University of Illinois Chicago (UIC) and a research assistant in the [RUIC Lab](https://ruic.lab.uic.edu/). I study how to make computer vision models more efficient and robust, from selective inference for video transformers to intelligent sensing on embedded devices. I also work on diffusion and flow models that adapt to new information during generation.
+I am an undergraduate student at the University of Illinois Chicago (UIC) and a research assistant in the [RUIC Lab](https://ruic.lab.uic.edu/). I expect to graduate in December 2026. I study how to make computer vision models more efficient and robust, from selective inference for video transformers to intelligent sensing on embedded devices. I also work on diffusion and flow models that adapt to new information during generation.
 
-My work spans model design, experimental evaluation, and deployment. I have first-authored papers at IEEE and ACM venues, including JETCAS, DAC, GLSVLSI, and ACSOS. In summer 2026, I was an edge computing intern at Epsilon Systems Solutions, where I built a polarimetric camera pipeline and deployed TensorRT-optimized segmentation on a Jetson Orin Nano.
-
-I am pursuing a B.S. in Information and Decision Sciences with a minor in Computer Science in the UIC Honors College, with expected graduation in December 2026.
+My work spans model design, experimental evaluation, and deployment. I have first-authored papers at IEEE and ACM venues.
 
 **Research interests**
 
